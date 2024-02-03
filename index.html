@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,500;1,700&display=swap");
+
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: aquamarine;
+      }
+      h1 {
+        font-size: 50px;
+        font-family: "DM Sans", sans-serif;
+        letter-spacing: 3px;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>I am <span class="auto-type"></span></h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Coding", "sleeping", "eating"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
